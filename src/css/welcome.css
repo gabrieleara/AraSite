@@ -1,0 +1,85 @@
+/*
+	Home Page Header Style
+ */
+
+.welcome-header-wrapper {
+	position: relative;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	/*padding: 0px 0px 30px; /* TODO: Maybe futile */
+	
+	background: #AAA url(../assets/img/head-back.jpg) no-repeat scroll center center;
+	background-size: cover;
+	min-height: 90vh;
+	
+}
+
+.welcome-header {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%) fixed; /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%) fixed; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+	color: #FFFFFF;
+}
+
+.welcome-header h1 {
+	text-shadow: #000 0px 0px 50px;
+}
+
+.welcome-header p {
+	text-shadow: #000 0px 0px 20px;
+}
+
+.mouse-scroll {
+	position: absolute;
+	bottom: 2.8rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 3.5rem;
+	height: 5.7rem;
+	background: url(../assets/img/mouse-scroll.svg) no-repeat center top;/*rgba(0, 0, 0, .45)*/
+	background-size: 5rem;
+}
+
+/* END HEADER */
+
+/* TODO: remove */
+@keyframes to-top{
+	0% {
+		top: calc(20vh + 20px);
+	}
+	
+	100% {
+		top: -40px;
+	}
+}
+
+.welcome-main {
+	z-index: 1;
+	position: relative;
+	
+	animation-name: to-top;
+	animation-duration: .4s;
+	animation-timing-function: cubic-bezier(0, 0, .2, 1);
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: both;
+	animation-play-state: running;
+	
+	min-height: 300px;
+	max-width: 80%;
+	padding: 0px;
+}
+
+@media (min-width: 1280px) {
+	.welcome-main {
+		max-width: 1024px;
+	}
+}

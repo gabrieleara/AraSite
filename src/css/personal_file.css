@@ -1,0 +1,68 @@
+.personal-file {
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+.personal-file > .row {
+	align-items: flex-start;
+}
+
+@media (max-width: 999px) {
+	.personal-file > .row {
+		flex-wrap: wrap;
+	}
+	
+	.personal-file > .row > * {
+		margin: 0px;
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+	}
+}
+
+.listsheet {
+	box-sizing: border-box;
+	flex-grow: 1;
+	margin: 0px 2.5% 0px 0px;
+	min-width: 350px;
+	width: 30%;
+}
+
+.listsheet > * {
+	box-sizing: border-box;
+	min-height: 2.4rem;
+	padding: .5rem 1rem;
+	
+	align-items: baseline;
+	align-content: center;
+	justify-content: flex-start;
+}
+
+.listsheet > *:not(:last-child) {
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.listsheet dt,
+.listsheet dd {
+	margin: 0px;
+}
+
+.listsheet dt {
+	padding: 0px;
+	font-weight: bold;
+	color: #5E5E5E;
+}
+
+.listsheet dt:after {
+	content: ":";
+}
+
+.listsheet dd {
+	padding: 0px 0px 0px .8rem;
+}
+
+.listsheet + * {
+	width: 65%;
+	margin: 0px 0px 0px 2.5%;
+	min-width: calc(100% - 350px - 10%);
+}

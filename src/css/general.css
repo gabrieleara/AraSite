@@ -1,0 +1,134 @@
+html {
+	height: 100%;
+	font: 1em/1.5 'Oxygen', helvetica, arial, sans-serif;
+}
+
+body {
+	min-height: 100%;
+	position: relative;
+	
+	margin: 0px;
+	background-color: #EEE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway';
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+p {
+	margin: .5rem 0px;
+}
+
+header,
+.of-hidden {
+	overflow: hidden;
+}
+
+header p {
+	font-size: .9em;
+	color: rgba(0, 0, 0, .8)
+}
+
+/* Ultra-light and font options */
+.ul-font {
+	font-family: 'Raleway', helvetica, arial, sans-serif;
+	font-weight: 300;
+}
+
+.ul-font h1,
+.ul-font h2,
+.ul-font h3,
+.ul-font h4,
+.ul-font h5,
+.ul-font h6,
+.ul-font p {
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+.custom-font p {
+	font-weight: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+/* Centering objects */
+.center-vertically {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+/* NOTICE: does not work with absolute positioned elements */
+.center-horizontally {
+	margin: 0px auto;
+}
+
+/* Cards & box shadows */
+.card {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	min-height: 200px; /* TODO: test */
+	min-width: 200px;
+	margin: 1rem; /* TODO: test */
+	padding: 1rem 1rem; /* TODO: test */
+	background: #FFFFFF;
+	border-radius: .2rem;
+}
+
+.card-hover-active {
+	transition: box-shadow 0.2s ease-in-out;
+}
+
+.card-1 {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-2 {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-1.card-hover-active:hover,
+.card-3 {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.card-2.card-hover-active:hover,
+.card-4 {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-3.card-hover-active:hover,
+.card-5 {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+/* TODO: other shadows */
+
+/* Basic style for flex row layout */
+
+.row {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.multirow {
+	flex-wrap: wrap;
+}
